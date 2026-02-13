@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Tabulação de Resultados SAEP</title>
+    
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx-populate/1.21.0/xlsx-populate.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Sistema de Tabulação de Resultados SAEP</h1>
+        
+        <div class="alert">
+            <strong>🚀 Bem-vindo:</strong> Importe os arquivos abaixo para gerar a Tabulação e o Diagnóstico da sua turma em segundos.
+        </div>
+        
+    </header>
+
+    <div class="box" id="box-mestre" onclick="document.getElementById('file-mestre').click()">
+        📂 1. Carregar Modelo Mestre (Vazio)
+    </div>
+    <input type="file" id="file-mestre" accept=".xlsx" hidden>
+
+    <div class="box" id="box-dados" onclick="document.getElementById('file-dados').click()">
+        📄 2. Carregar Desempenho Individual
+    </div>
+    <input type="file" id="file-dados" accept=".xlsx, .xls" hidden>
+
+    <button class="btn" id="btn-go" onclick="processar()">🚀 Processar Agora</button>
+    
+    <div id="console" class="log"></div>
+</div>
+
+<footer>
+    <p>&copy; 2026 Sistema de Tabulação de Resultados SAEP. Todos os direitos reservados.</p>
+    <p>Desenvolvido por <strong>Ivanildo Paiva</strong></p>
+</footer>
+
+<script src="/js/script.js"></script>
+
+</body>
+</html>
