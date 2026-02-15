@@ -7,7 +7,7 @@
 ![Engine](https://img.shields.io/badge/Engine-XlsxPopulate-orange)
 
 ## 🎯 O Problema
-Professores e coordenadores precisavam tabular manualmente os dados brutos do sistema SAEP para uma planilha de diagnóstico visual. O processo manual gerava erros de formatação, quebrava fórmulas do Excel e resultava em gráficos vazios (`#DIV/0!`) devido a inconsistências nos dados de entrada (como espaços extras em códigos "C3 ").
+Professores  precisavam tabular manualmente os dados brutos do sistema SAEP para uma planilha de diagnóstico visual. O processo manual gerava erros de formatação, quebrava fórmulas do Excel e resultava em gráficos vazios (`#DIV/0!`) devido a inconsistências nos dados de entrada (como espaços extras em códigos "C3 ").
 
 ## 🚀 A Solução
 Este sistema roda inteiramente no navegador (Client-side), lê os dados brutos, aplica correções lógicas e preenche a planilha mestre "cirurgicamente", mantendo gráficos, macros e formatações condicionais intactas.
@@ -32,12 +32,3 @@ Este sistema roda inteiramente no navegador (Client-side), lê os dados brutos, 
 
 ---
 
-## 📂 Estrutura do Projeto
-
-```text
-/
-├── index.html      # A interface do usuário (UI)
-├── script.js       # O cérebro do sistema (Lógica de ETL)
-├── css/
-│   └── style.css   # Estilização e layout
-└── README.md       # Documentação do projeto
