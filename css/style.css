@@ -1,10 +1,18 @@
+/* --- Reset Básico para evitar Scroll indesejado --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Segoe UI', sans-serif;
     background: #eef2f6;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 40px;
+    /* Reduzimos o padding vertical e usamos box-sizing para caber na tela */
+    padding: 3vh 20px 1vh 20px; 
     min-height: 100vh;
 }
 
@@ -15,12 +23,13 @@ body {
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    margin-bottom: 40px;
+    /* Margem reduzida para não empurrar o rodapé para fora */
+    margin-bottom: 20px; 
 }
 
 h1 {
     color: #1e40af;
-    margin-top: 0;
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -89,12 +98,14 @@ h1 {
     font-size: 0.9rem;
 }
 
+/* --- Rodapé ajustado para ficar sempre visível --- */
 footer {
     text-align: center;
     color: #64748b;
     font-size: 0.9rem;
-    margin-top: auto;
-    padding-top: 20px;
+    margin-top: auto; /* Esta é a mágica que empurra ele pro fundo */
+    padding-top: 15px;
+    padding-bottom: 10px;
     border-top: 1px solid #e2e8f0;
     width: 100%;
     max-width: 850px;
